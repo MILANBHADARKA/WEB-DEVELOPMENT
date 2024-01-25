@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan's website</title>
+    <link rel="shortcut icon" href="/HTML/favicon.jpg" type="image/x-icon">
+    <style>
+        /* Element selctor */
+
+        div{  /*with use of element selector all the element in code has apply this properties*/
+            background-color: red;
+        }
+
+        /* Class selector */
+
+        .yello{  /*with use of class selector not all but only element that have class yello has apply this properties*/
+        /*we can give any name of class (it is not nececery that if you want to background colour yello than class name is yello) if you want to give class name "one" than this is ok*/
+        /*we can give one class name to many element*/
+            background-color: yellow;
+        }
+
+        /* ID selector */
+
+        #green{   /*with use of id selector not all but only element that have id green has apply this properties*/
+        /*we can give any name of id (it is not nececery that if you want to background colour green than id name is green) if you want to give id name "one" than this is ok*/
+        /*we can give one id name only one element*/
+            background-color: green;
+        }
+
+        /* Child selector */
+
+        div > p { /*if p is directly child of div than apply this properties*/
+            background-color: pink;
+        }
+
+        /* Descendant selector */
+
+        div p { /*if p is not directly child but inside div than apply this properties*/
+        /*example p is child of span and span is child of div than background colour of p is change(if we use descendant selector)*/
+            background-color: orange;
+        }
+
+        /* Universal selector */
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        /* pseudo selector */
+        a:link{ /* if link was not visited than apply this properties*/
+            color: pink;
+        }
+
+        a:visited{ /*if link was visited than apply this properties*/
+            color: yellow;
+        }
+
+        a:active{  /*if we click on link than apply this properties*/
+            background-color: red;
+        }
+
+        a:hover{  /*if we hover mouse curser to the link than apply this properties*/
+            background-color: black;
+        }
+
+        p:first-child{   /*Wherever the p is the first child, apply this properties*/
+        /*notice p should be first chile*/
+        /*example in div direct p than p is first child but in div after span if p than p is second child*/
+        /*for understanding of first,seconde.t.c., child see code*/
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+        <div>this is first div</div>
+        <div>this is second div</div><br>
+
+        <div class="yello">this is third div</div><br>
+
+        <div id="green">this is fourth div</div><br>
+
+        <div>
+            <span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, minima.</p>
+            </span>
+        </div><br>
+
+        <a href="https://google.com" target="_blank">goto google</a><br>
+        <a href="https://facebook.com" target="_blank">goto facebook</a><br>
+
+        <div>
+            <p>i am first child of div</p>    <!--here p is first chile-->
+            <p>i am second child of div</p>    <!--this p is second child-->
+        </div><br>
+
+        <div>
+            <span>
+                <p>i am first child of span</p>    <!--this p is first child of span-->
+                <p>i am second child of span</p>  <!--here p is second child of span-->
+            </span>
+
+            <p>i am second child of div</p>    <!--here p is second child-->
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>
