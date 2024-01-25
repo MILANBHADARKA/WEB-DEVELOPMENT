@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is web page which contain simple form">
+    <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Milan's website</title>
+</head>
+<body>
+    <header>
+        <h1><u>FORM</u></h1>
+    </header>
+
+    <main>
+        <!-- here action is in backhand part so ingnore it's -->
+        <form action="">
+
+            <div> <!--this is division is for example of text-->
+                <label for="name">NAME : </label>
+                <input type="text" placeholder="ENTER FULL NAME" required>  <!--here required means this info must be added before submitattion-->
+            </div><br><br>
+
+            <div>   <!--this is division is for example of password-->
+                <label for="password">PASSWORD : </label>
+                <input type="password" id="password" placeholder="ENTER YOUR PASSWORD" required>
+            </div><br><br>
+
+            <div>  <!--this is division is for example of radio button-->
+                <span><b><u>Choose gender</u></b></span><br><br>
+                <label for="male">MALE </label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="female">FEMALE </label>
+                <input type="radio" id="female" name="gender" value="female" required>
+            </div><br><br>
+            
+            <div>   <!--this is division is for example of checkbox-->
+                <span><b><u>Choose your subject</u></b></span><br><br>
+                <label for="maths">MATHS </label>
+                <input type="checkbox" id="maths" name="subject" value="maths"><br>
+                <label for="physics">PHYSICS </label>
+                <input type="checkbox" id="physics" name="subject" value="physics"><br>
+                <label for="chemistry">CHEMISTRY </label>
+                <input type="checkbox" id="chemistry" name="subject" value="chemistry"><br>
+                <label for="biology">BIOLOGY </label>
+                <input type="checkbox" id="biology" name="subject" value="biology">
+            </div><br><br>
+
+            <div>   <!--this is division is for example of drop down menu-->
+                <label for="city">SELECT CITY : </label>
+                <select name="city names" id="city" required>
+                    <option value="kutiyana">Kutiyana</option>
+                    <option value="junagadh">Junagadh</option>
+                    <option value="rajkot">Rajkot</option>
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="nadiad">Nadiad</option>
+                </select>
+            </div><br><br>
+
+            <div>   <!--this is division is for example of textarea-->
+                <label for="feedback">Eneter your feedback : </label><br>
+                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+            </div><br><br>
+
+            <div>   <!--this is division is for example of submit button-->
+            <input type="submit">
+            </div>
+
+        </form>
+    </main>
+
+    <footer><p><b>THANKYOU</b></p></footer>
+</body>
+</html>
