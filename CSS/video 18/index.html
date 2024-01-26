@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOXMODAL</title>
+    <link rel="shortcut icon" href="/HTML/favicon.jpg" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: beige;
+        }
+        .box1{   /*this style will apply on class box1*/
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            border: 3px solid blue;
+            height: 300px;
+            box-sizing: border-box;    /*box-sizing: border-box; means it will adjust the height of content in such a way that the total height is equal to the height we given(here 300px).*/
+            /*in sort here our content hight is not 300px but total height is 300px.
+            (total height=height+top padding+bottom padding+top border+bottom border+top margin+bottom margin) see image to clarify*/
+        }
+        .box2{  /*this style will apply on class box2*/
+            color: red;
+            padding: 20px;
+            margin: 10px;
+            border: 3px solid blue;
+            height: 300px;
+            box-sizing: content-box;    /*box-sizing: content-box; means it will give full height to our content(here 300px)*/
+            /*in sort here our content hight is 300px.
+            (total height=height+top padding+bottom padding+top border+bottom border+top margin+bottom margin) see image to clarify*/
+        }
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+
+        <div class="box box1">I AM A BOX.</div>
+        <div class="box box2">I AM ANOTHER BOX.</div>
+
+        <div>
+            <p>this is forbox-sizing: border-box;</p>
+            <img src="/CSS/video 18/Screenshot 2024-01-26 122134.png" alt="img"><br><br>
+
+            <p>this is forbox-sizing: content-box;</p>
+            <img src="/CSS/video 18/Screenshot 2024-01-26 122151.png" alt="img"><br><br>
+
+            <p>concept of MARGIN COLLAPSE</p>
+            <img src="/CSS/video 18/Screenshot 2024-01-26 122254.png" alt="img" width="300"><br><br>
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
