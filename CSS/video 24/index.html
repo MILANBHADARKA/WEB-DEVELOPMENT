@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <link rel="shortcut icon" href="/HTML/favicon.jpg" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            border: 2px solid blue;
+            margin: 50px auto;
+            box-shadow: 5px 6px 15px 7px #2da722;
+            /* here first we give 5px this is "h-offset" and than we give 6px this is "v-offset" this both determines the sadow's horizatal and vertical position.*/
+            /* then we give 15px this is "blur" the larger the blur,the blurrier shadow*/
+            /*then we give 7px this is "spred" this define the expands or shrink the shadow */
+            /* then we give colour*/
+        }
+
+        .text-shadow{
+            text-shadow: 3px 4px 5px #888888;
+            /* here first we give 3px this is "h-offset" and than we give 4px this is "v-offset" this both determines the sadow's horizatal and vertical position.*/
+            /* then we give 5px this is "blur" the larger the blur,the blurrier shadow*/
+            /* then we give colour*/
+            border: 2px solid green;
+            border-radius: 15px;
+            outline: 3px solid black;
+            outline-offset: 30px;
+            /*difference between outline and border*/
+            /* 1 position : outline dot't take up space; they're drawn around the element, outside of any border*/
+            /* 2 offset : using the outline-offset proparty, you can set the space between an outline and the edge or border of an element.*/
+            /* 3 rounded corner : order xan have rounded corner ucing border-radius,while outline generally cannot outline follow border on rounded corner.*/
+        }
+    </style>
+</head>
+<body>
+
+     <header></header>
+
+     <main>
+        <div class="box">
+            here we learn about box-shadow,text-shadow,outline.
+        </div>
+
+        <p class="text-shadow">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit iure dolorum corporis a voluptatibus, iste molestias eaque dolorem ex recusandae? Mollitia, repellendus!
+        </p>
+     </main>
+
+     <footer></footer>
+
+</body>
+</html>
