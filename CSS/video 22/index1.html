@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan's website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{   /*html is root element*/
+            font-size: 13px;
+        }
+
+        .box{
+            background-color: aqua;
+            border: 2px solid blue;
+            /* width: 1528px; */
+            width: 80vw;  /*vw=view port width   this will take user view port width 100vw means 100% width of computer,80vw means 80% width of computer,200vw means 2x of computer widthe.t.c.*/ 
+            height: 10vh;   /**vh=view port height it is like vw*/
+            margin: auto;  /* this will automatic fix element to center of left write page(not center of top bottom) this will work on only block element(div,e.t.c.) not on inline element(span e.t.c.)*/
+            box-sizing: border-box;
+            font-size: 2rem; /*here 2rem = 2*font size of root element so here 2*13 = 26px.*/  
+        }
+
+        .box1{
+            background-color: aqua;
+            border: 2px solid blue;
+            width: 80vw; 
+            height: 40vh;
+            margin: 20px auto;  /* here first number saw means 20px saw margin of top and bottom and second means auto saw left and right margin*/
+            box-sizing: border-box;
+            font-size: 2em;   /*here 2em = 2*default value of font size   /or/   font size of root element = 2*13 = 26px.*/
+            /* if there not given font size of root element then defaut size is 16px so 2em = 2*16 = 32px*/
+        }
+
+        .box2{
+            background-color: aqua;
+            border: 2px solid blue;
+            width: 90vw; 
+            height: 80vh;
+            margin: 20px auto;  /* here first number saw means 20px saw margin of top and bottom and second means auto saw left and right margin*/
+            box-sizing: border-box;
+            font-size: 19px;
+        }
+
+        .box2 p{
+            font-size: 2em;   /* here 2em 2*19px because in class=box2 we gave font size is 19px so it will inharit(take) from there and font size of paragraph of box2 is 2*19 = 38px.*/
+        }
+
+        .box3{
+            background-color: red;
+            color: pink;
+            border: 2px solid blue;
+            font-size: 22px;
+            width: 100vmax;   /* vmax means max value from width or height means in mobile height>width in computer width>height so in particular device vmax means max of height and width.*/
+            /* and 100vmax means 100% of that max value*/
+            height: 50vmax;
+            box-sizing: border-box;
+        }
+
+        .box4{
+            background-color: pink;
+            color: red;
+            border: 2px solid blue;
+            font-size: 22px;
+            width: 100vmin;   /* vmin means min value from width or height means in mobile width<height in computer height<width so in particular device vmin means min of height and width.*/
+            /* and 100vmin means 100% of that min value*/
+            height: 50vmin;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+        <div class="box">
+            here we learn about px,vw,vh,em,rem,vmax,vmin and auto margin.
+        </div>
+
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, libero perferendis odit molestias autem blanditiis corrupti id fugit voluptatem. Delectus aut perspiciatis sed provident quasi autem maxime magni optio vitae ullam officia non quod corporis, aliquam enim veniam! Ipsum rerum, quae iste neque quibusdam vero.
+        </div>
+
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione rem molestiae eveniet nam non fuga magni itaque dolor ullam deleniti, error deserunt! A, praesentium quo at quam earum ex. Veritatis, dolor! Necessitatibus, dolore molestias! Ipsam sapiente esse quisquam reiciendis molestias sit quaerat provident vitae.<br><br><br>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quo? Quam dolores itaque minima quasi harum iure mollitia cupiditate corporis cum repudiandae, quidem natus neque.
+            </p>
+        </div>
+
+        <div class="box3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore iure possimus voluptate sapiente beatae, laborum fugit repellendus distinctio magnam dignissimos quos expedita!
+        </div>
+
+        <div class="box4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum facere libero aperiam nihil ipsum, provident ad pariatur vel quasi veniam officia officiis maiores?
+        </div>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
