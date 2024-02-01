@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css veriable</title>
+
+    <!-- use of css variable is ex.,if one same color is use many places in our website now if we want to chage that color then we need to change that color sapratly.but with help of css variable we can change that color at every palces with change only in variable. -->
+
+    <style>
+
+        :root{  /*root is for declare globle varible*/
+            --color:red;
+            --seccolor:rgb(64, 57, 141);    /*we can give any name according to our understanding here seccolor means secondry solor*/
+            --defmargin:15px;  /*we can give any name*/
+            --defopacity: 0.5 ;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li:first-child{
+            background-color: var(--seccolor);
+        }
+
+        ul li{
+
+            --defpadding: 30px 30px;  /* here this is local varible. is there both globle and local variable then first priority is given to local vairble*/
+
+            list-style-type: none;
+            /* margin: 15px 15px; */
+            margin: var(--defmargin);
+            padding: var(--defpadding);
+            background-color: var(--color);
+            opacity: var(--defopacity);
+        }
+
+        p{
+            text-transform:uppercase;
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>
+            use of css variable is ex.,if one same color is use many places in our website now if we want to chage that color then we need to change that color sapratly.but with help of css variable we can change that color at every palces with change only in variable.
+        </p>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
