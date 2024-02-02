@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS media queries</title>
+    <title>CSS media quary</title>
     <style>
 
         body{
-            background-color: #a52a2a;
+            background-color: aqua;
         }
 
-        .box{
-            width: 100px;
-            height: 100px;
-            background-color: steelblue;
-            margin: 3px;
-            padding: 3px;
-        }
-
-        .boxes{
-            display: flex;
+        span{
+            background-color: blue;
         }
 
         /* SYNTAX
@@ -31,17 +23,20 @@
         /* here "not" means if mediatype is not like that then apply this css
         "only" means if mediatype is like that then  apply this css*/
 
-        @media only screen and (max-width: 455px){    /*means if screen width is <= 455 then apply this style we can give any expression ex., min-width,min-height e.t.c.*/
-            body{
-                background-color: blue;
-            }
-            .boxes{
-                flex-direction: column;   /*means if screen width is<=455px then .boxes class is arrange in coloum for more understading inspect this page and Increase or decrease screen width*/
+        @media only screen and (max-width: 455px){    /*means if width is <= 455 then apply this style we can give any expression ex., min-width,min-height e.t.c.*/
+            span{
+                background-color: red;
             }
             
         }
 
+        .box{
+            background-color: burlywood;
+        }
+
         
+
+
     </style>
 </head>
 <body>
@@ -49,6 +44,10 @@
     <header></header>
 
     <main>
+        <span>
+            hello i am a span.
+        </span>
+
         <div class="boxes">
             <div class="box"></div>
             <div class="box"></div>
