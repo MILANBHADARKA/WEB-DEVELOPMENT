@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --bodyimg: url(/HTML/IMG/bbc5.jpg);
+    --bordercolor: #5e4409;      /*black*/
+    --hcolor:  rgb(200, 100, 255); 
+    --navcolor: rgba(188, 191, 35, 0.862);    /*black*/
+    --logoback: #f0fbdb;         /*white*/
+    --logocolor: black;
+    --buttonback: rgb(36, 214, 152);     /*black*/
+    --buttoncolor: rgb(153, 39, 39);    /*white*/
+    --footerback: rgba(230, 207, 58, 0.756);        /*black*/
+    --footercolor: rgb(41, 26, 5);       /*white*/
+}
+
+body{
+    position:absolute;
+    background-image: var(--bodyimg);
+    background-size: cover ;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+h3{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--hcolor)
+}
+
+nav{
+    background-color: var(--navcolor);
+    width: 100vw;
+    height: 50px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    /* color: white; */
+}
+
+ul li{
+    margin: 14px 21px 0px 21px;
+    padding: 3px 5px;
+    /* border: 1px solid white;
+    border-radius: 10px; */
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#sign{
+   padding: 3px 100px 3px 5px;
+}
+.name{
+    margin: 14px 0px 0px 0px;
+    background-color: var(--logoback);
+    color: var(--logocolor);
+    border: 1px solid var(--bordercolor);
+    border-radius: 5px;
+}
+#search{
+    margin: 14px 0px 0px 0px;
+    /* background-color: white;
+    border-radius: 3px; */
+}
+select{
+    text-transform: capitalize;
+}
+button{
+    text-transform: capitalize;
+    /* border: none; */
+    background-color: var(--buttonback);
+    color: var(--buttoncolor);
+    cursor: pointer;   /* Mouse pointer on hover */
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+#sb{
+    margin: 14px 0px 0px 3px;
+}
+
+.contant{
+    /* background-color: white; */
+    height: 750px;
+}
+
+footer{
+    background-color: var(--footerback);
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--footercolor);
+}

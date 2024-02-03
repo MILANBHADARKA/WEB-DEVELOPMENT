@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selector</title>
+    <style>
+
+
+        /* .box:first-child{            //for first child
+            background-color: red;
+        } */
+
+        /* .box::first-line{         //style apply on first line
+            color: yellow;
+        } */
+
+        /* .boxes *{                       //style apply on all element of boxes class
+            color: blue;
+            border: 2px solid black;
+        }
+
+        p, a, .box, [data-color="primary"]{            //to select many element at a time
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(odd){                          //nth child here we can also use .box:nth-child(even)
+            background-color: blue;
+        } */
+
+        /* .box:nth-last-child(2){                  //to select from last
+            background-color: red;
+        } */
+
+        .boxes::before {                     /*to add some contant before our main contant on class boxes*/
+            content: "Harry is good";
+            color: blue;
+        }
+
+        .boxes::after {                          /*to add some contant after our main contant on class boxes*/
+            content: "Sigma course is also good";
+            color: red;
+        }
+
+        ::selection {                    /*if user select any text from website then apply this style*/
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter {           /*to select first letter*/
+            color: peru;
+            font-size: 45px;
+        }
+
+        input::placeholder {                /*to applying style on placehilder*/
+            color: rgb(94, 94, 243);
+        }
+    </style>
+
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+        <div class="boxes">
+            <div data-color="primary" class="box">I am first box</div>
+            <div class="box">Hey I am a box</div>
+            <div class="box">Hey I am a box</div>
+            <input type="text" placeholder="Type your name here">
+        </div>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>

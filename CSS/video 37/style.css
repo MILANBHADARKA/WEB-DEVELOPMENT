@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(246, 244, 223, 0.704);
+}
+body{
+    position:absolute;
+}
+header{
+    position: sticky;
+    top:0px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+nav{
+    border: 5px solid rgb(77, 3, 3);
+    border-radius: 20px;
+    background-color: black;
+}
+nav ul{
+    border: 2px solid black;
+    border-radius: 20px;
+    list-style: none;
+    display:flex;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    /* padding: 20px 100px; */
+    margin: 9px 100px;
+    text-transform: capitalize;
+}
+
+nav ul li a{
+    background-color: black;
+    color: white;
+    text-decoration: none; /*to diceable underline*/
+}
+
+nav ul li .text{
+    background-color: white;
+    color: black;
+}
+
+nav ul li button{
+    background-color: rgb(221, 243, 24);
+    color: white;
+}
+
+a:link{
+    color: white;
+}
+
+.logo:visited{  /*this is only on logo class not in all anchore tags*/
+    color: rgb(221, 243, 24);
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    margin: 10px 0px;
+    border: 2px solid white;
+    border: 2px solid black;
+    border-radius: 21px;
+    box-sizing: content-box;
+}
+
+.box1{
+    background-color: rgba(102, 79, 50,.5);
+}
+.box2{
+    background-color: rgba(255, 127, 80,.5);
+}
+.box3{
+    background-color: rgba(210, 105, 30,.5);
+}
+img{
+    border: 2px solid black;
+    border-radius: 21px;
+    width: 100%;
+    height: 100%;
+}
+
+.fix{
+    display: inline-block;
+    border: 2px solid black;
+    background-color: blue;
+    color: cyan;
+    border-radius: 10px;
+    position: fixed;
+    top: 595px;
+    left: 1363px;
+
+}
+
+footer p{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
