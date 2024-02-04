@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition proparty</title>
+
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            transition-property: transform;         /*here we can do "all" to apply on all proparty*/
+            transition-duration: 3s;        /*this is for how many time does transition play*/
+            transition-timing-function: ease-in-out;     /*this is for how the transaction will look like we can add many transition to add another see in inspect and paste here*/
+            transition-delay: 1s;   /*this is For how long after clicking the transition will start*/ 
+
+            /*transition: all 3s ease-in-out .6s;*/      /*sort form*/
+        }
+
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
+

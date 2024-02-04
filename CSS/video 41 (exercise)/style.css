@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo img{
+    width: 164px;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 221px;
+}
+.right ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 34px;
+}
+.right ul li{
+    list-style: none;
+    display: flex;        /*this is for flex arrow img*/
+    align-items: center;
+    cursor: pointer;
+}
+.right ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+}
+.end img{
+    height: 22px;
+    width: 27px;
+}
+

@@ -1,17 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex-Box</title>
-</head>
-<body>
-    
+    <link rel="shortcut icon" href="/HTML/favicon.jpg" type="image/x-icon">
+    <style>
+
+      .container {
+        min-width: 700px;
+        height: 500px;
+        border: 2px solid black;
+        
+        display: flex;
+        
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        
+        /* justify-content: center; */
+        
+        /* justify-content:space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        
+        align-items: center;
+        
+        /* align-items:end; */
+        /* align-items: self-end;*/
+        /* align-items: self-start; */
+        
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: nowrap; */
+        
+        /*flex-flow: column wrap;*/     /*SYNTAX   flex-flow: <flex diorection> <flex wrap>   */
+        
+        /* align-content: center; */
+        /* align-content: end; */
+        /* align-content: start; */
+        /* align-content:space-around; */
+        /* align-content: space-between; */
+        /* align-content: space-evenly; */
+        
+        /*there is no justify item in css*/
+        
+        /*gap: 30px;*/   /*give space between element*/
+        /* gap: 30px 10px; */
+        /* row-gap: 30px; */
+        /* column-gap: 10px; */
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        background-color: blue;
+        border: 1px solid black;
+        margin: 2px;
+        /*flex-grow: 1;*/   /*by default flex-graw is 0. now if we give flex-grow: 1; it means element take full width of it's parants*/   /*notice to use this first disable wrap*/
+      }
+      .box1{
+        /*flex-grow: 2;*/   /*if we set flex grow in sepret element so here flex-grow: 2; means it element take width of 2 element;*/ 
+        /*flex-shrink: 2;*/   /*it means this if elements is overflow on they parant then this element means here class box1 will be smaller with extra speed*/ 
+        
+        align-self: flex-end;   /*to align this perticular element*/
+      }
+      .box2{
+        align-self: flex-start;
+      }
+      .hello{
+        order: 1;
+      }
+      .order-2{
+        order: 2;
+      }
+      .order-3{
+        order: 3;      /*by default order is 0. as the order is higher,element will be arrange back  ex., first arrange order-0 then order-1 then order-10........*/
+      }
+
+    </style>
+  </head>
+  <body>
     <header></header>
 
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box hello">4</div>
+        <div class="box order-2">5</div>
+        <div class="box order-3">6</div>
+        <div class="box">7</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+
+      <div>
+        <img src="flexbox.drawio_page-0001.jpg" width="500px" alt="image">
+      </div>
+    </main>
 
     <footer></footer>
-
-</body>
+  </body>
 </html>
