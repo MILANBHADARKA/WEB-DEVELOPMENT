@@ -25,9 +25,9 @@ let o;
 o=prompt("enter valid operator");
 
 
-let c= Math.random();
+let c= Math.random();       //it create random number between 0 to 1.
 
-if(c<=0.1)
+if(c<=0.1)                 
 {
     if(o=='+')
     {
