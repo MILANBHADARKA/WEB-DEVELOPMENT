@@ -15,77 +15,87 @@ if perform wrong opration for 10% time only
 */
 
 
+let r= Math.random();       //it create random number between 0 to 1.
+let a=prompt("enter first number");
+let b=prompt("enter second number");
+let o=prompt("enter valid operator");
+let ans;
 
-let a,b,ans;
-a=prompt("enter first number");
-b=prompt("enter second number");
-
-
-let o;
-o=prompt("enter valid operator");
-
-
-let c= Math.random();       //it create random number between 0 to 1.
-
-if(c<=0.1)                 
-{
-    if(o=='+')
-    {
-        ans = a-b;
-        // console.log(ans);
-        alert(ans);
-    }
-    else if(o=='*')
-    {
-        ans = a+b;
-        // console.log(ans);
-        alert(ans);
-    }
-    else if(o=='-')
-    {
-        ans = a/b;
-        // console.log(ans);
-        alert(ans);
-    }
-    else if(o=='/')
-    {
-        ans = a ** b;
-        // console.log(ans);
-        alert(ans);
-    }
-    else
-    {
-        console.log("Enter valid oprator");
-    }
+let obj = {
+    "+": "-",
+    "*": "+",
+    "-": "/",
+    "/": "**",
 }
+
+if(r>0.1)                 
+{
+    alert(`the result is ${eval(`${a} ${o} ${b}`)}`);
+
+
+    // if(o=='+')
+    // {
+    //     ans = a-b;
+    //     // console.log(ans);
+    //     alert(ans);
+    // }
+    // else if(o=='*')
+    // {
+    //     ans = a+b;
+    //     // console.log(ans);
+    //     alert(ans);
+    // }
+    // else if(o=='-')
+    // {
+    //     ans = a/b;
+    //     // console.log(ans);
+    //     alert(ans);
+    // }
+    // else if(o=='/')
+    // {
+    //     ans = a ** b;
+    //     // console.log(ans);
+    //     alert(ans);
+    // }
+    // else
+    // {
+    //     console.log("Enter valid oprator");
+    // }
+}
+
 else
 {
-    if(o=='+')
-    {
-        ans = a + b;
-        // console.log(ans);
-        alert(ans);
-    }
-    else if(o=='*')
-    {
-        ans = a*b;
-        // console.log(ans);
-        alert(ans);
-    }
-    else if(o=='-')
-    {
-        ans = a-b;
-        // console.log(ans);
-        alert(ans);
-    }
-    else if(o=='/')
-    {
-        ans = a / b;
-        // console.log(ans);
-        alert(ans);
-    }
-    else
-    {
-        console.log("Enter valid oprator");
-    }
+    o=obj[o];
+    alert(`the result is ${eval(`${a} ${o} ${b}`)}`);
+
+
+
+    // if(o=='+')
+    // {
+    //     ans = a + b;
+    //     // console.log(ans);
+    //     alert(ans);
+    // }
+    // else if(o=='*')
+    // {
+    //     ans = a*b;
+    //     // console.log(ans);
+    //     alert(ans);
+    // }
+    // else if(o=='-')
+    // {
+    //     ans = a-b;
+    //     // console.log(ans);
+    //     alert(ans);
+    // }
+    // else if(o=='/')
+    // {
+    //     ans = a / b;
+    //     // console.log(ans);
+    //     alert(ans);
+    // }
+    // else
+    // {
+    //     console.log("Enter valid oprator");
+    // }
 }

@@ -43,7 +43,7 @@ console.log(typeof r,typeof s,typeof t,typeof u,typeof p,typeof q);
 
 console.log(z,v,y);
 
-let o = {          //this is call object. we can give any name like vaariable.
+let o = {          //this is call object. we can give any name instade of o.
     name: "Milan",                //note that here we cannot give samicolon at the end we give colon 
     "job code":5319                //here in space between job and code so ""(double cout) is neccesry but in other key that have no space in then ""(double cout) is mendetary.
 }

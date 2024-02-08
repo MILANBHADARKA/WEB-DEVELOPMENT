@@ -31,7 +31,7 @@ console.log(b.slice(2));       //this will print 2 to end index char.
 /*
 replace
 */
-console.log(b.replace("Bhadarka","Ahir"));            //this will print changes not chage variable value
+console.log(b.replace("Bhadarka","Ahir"));            //this will print changes not change variable value
 console.log(b.replace("hello","hi"));     //if in string there are more then one "hello" this will chage only first "hello".
 
 
