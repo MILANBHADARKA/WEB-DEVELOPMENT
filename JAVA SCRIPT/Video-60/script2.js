@@ -54,10 +54,21 @@ console.log(p);
 
 
 /*
-removing white space
+removing white space from satrt and end
 */
 
-let z="    Hetav changani     "
+let z="    Hetav     changani     "
 
 z=z.trim();
 console.log(z);
+
+
+
+
+//startswith() & endswith() function
+
+let f="Milan BHadarka."
+
+console.log(f.startsWith("Milan"))     //if string f is start with "Milan" then it give output true otherwise false.
+console.log(f.endsWith("."))          //if string f is end with "." then it give output true otherwise false.
+ 
