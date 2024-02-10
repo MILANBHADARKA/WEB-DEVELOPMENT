@@ -18,7 +18,7 @@ if perform wrong opration for 10% time only
 let r= Math.random();       //it create random number between 0 to 1.
 let a=prompt("enter first number");
 let b=prompt("enter second number");
-let o=prompt("enter valid operator");
+let op=prompt("enter valid operator");
 let ans;
 
 let obj = {
@@ -30,28 +30,28 @@ let obj = {
 
 if(r>0.1)                 
 {
-    alert(`the result is ${eval(`${a} ${o} ${b}`)}`);
+    alert(`the result is ${eval(`${a} ${op} ${b}`)}`);
 
 
-    // if(o=='+')
+    // if(op=='+')
     // {
     //     ans = a-b;
     //     // console.log(ans);
     //     alert(ans);
     // }
-    // else if(o=='*')
+    // else if(op=='*')
     // {
     //     ans = a+b;
     //     // console.log(ans);
     //     alert(ans);
     // }
-    // else if(o=='-')
+    // else if(op=='-')
     // {
     //     ans = a/b;
     //     // console.log(ans);
     //     alert(ans);
     // }
-    // else if(o=='/')
+    // else if(op=='/')
     // {
     //     ans = a ** b;
     //     // console.log(ans);
@@ -65,30 +65,30 @@ if(r>0.1)
 
 else
 {
-    o=obj[o];
-    alert(`the result is ${eval(`${a} ${o} ${b}`)}`);
+    op=obj[op];
+    alert(`the result is ${eval(`${a} ${op} ${b}`)}`);
 
 
 
-    // if(o=='+')
+    // if(op=='+')
     // {
     //     ans = a + b;
     //     // console.log(ans);
     //     alert(ans);
     // }
-    // else if(o=='*')
+    // else if(op=='*')
     // {
     //     ans = a*b;
     //     // console.log(ans);
     //     alert(ans);
     // }
-    // else if(o=='-')
+    // else if(op=='-')
     // {
     //     ans = a-b;
     //     // console.log(ans);
     //     alert(ans);
     // }
-    // else if(o=='/')
+    // else if(op=='/')
     // {
     //     ans = a / b;
     //     // console.log(ans);
