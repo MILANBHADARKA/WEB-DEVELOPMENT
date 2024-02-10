@@ -23,9 +23,11 @@ let y=5.6;
 console.log(z);
 console.log(v);
 console.log(y);
+//console.log(z,v,y);
 
 
 //premetive data-type
+
 //in java-script there are 7 premetive data-type
 //null,number,string,symbol,undefined,boolean,bigint
 let r=5;
@@ -41,7 +43,7 @@ console.log(typeof r,typeof s,typeof t,typeof u,typeof p,typeof q);
 
 
 
-console.log(z,v,y);
+//object
 
 let o = {          //this is call object. we can give any name instade of o.
     name: "Milan",                //note that here we cannot give samicolon at the end we give colon 
