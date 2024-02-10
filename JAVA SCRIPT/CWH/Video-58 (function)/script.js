@@ -36,3 +36,12 @@ const fun1 = (a) =>
 
 fun1(45);
 fun1("Milan");
+
+
+//store function in variable
+
+const myfunction = function(){
+    console.log("Hello")
+}
+
+console.log(typeof(myfunction))

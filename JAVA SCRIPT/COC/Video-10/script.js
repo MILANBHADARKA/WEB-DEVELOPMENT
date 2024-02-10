@@ -1,0 +1,1 @@
+//stack(for primitive) ,heap(for non-premitive)
