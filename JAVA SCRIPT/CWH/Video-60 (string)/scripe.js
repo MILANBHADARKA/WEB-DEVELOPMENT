@@ -1,6 +1,6 @@
 //strings
 
-let real_name="Milan";
+let real_name="Milan";                      //here we can also use single qut(' ').
 let friend_name="milk";
 console.log(real_name);
 
