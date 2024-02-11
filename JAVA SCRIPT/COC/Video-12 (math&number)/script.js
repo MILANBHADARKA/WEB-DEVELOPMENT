@@ -34,8 +34,13 @@ console.log(d.toLocaleString('en-US'));      //it give coma with US standerd
 
 console.log("\n");
 
-console.log(Number.MAX_VALUE);//min & max valur of number
+console.log(Number.MAX_VALUE);//min & max value of number
 console.log(Number.MIN_VALUE);
+
+
+
+
+
 
 
 

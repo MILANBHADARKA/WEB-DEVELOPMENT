@@ -111,13 +111,14 @@ console.log(i);
 
 
 
-
-
 //slice() function
 
 let j=[2,4,6,3,7,8]
 console.log(j.slice(2))
 console.log(j.slice(2,4))
+
+
+//now diff between slice and splice is that splice do changes in orginal array but slice don't do changes in original array.
 
 
 
