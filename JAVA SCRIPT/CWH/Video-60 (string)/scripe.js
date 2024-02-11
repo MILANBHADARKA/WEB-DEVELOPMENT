@@ -21,3 +21,14 @@ console.log("His name is " , real_name ,"his friend name is " , friend_name);   
 
 console.log(`his name is ${real_name} and his friend name is ${friend_name}`);   
  // here '`' this sign is call backtik.  
+
+
+
+let a="Milan"
+
+console.log(a[0]);
+console.log();
+
+console.log(a.charAt(3));
+console.log(a.indexOf('l'));         //if char is not found then it's give -1 in output
+ 

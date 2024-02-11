@@ -67,8 +67,13 @@ console.log(z);
 
 //startswith() & endswith() function
 
-let f="Milan BHadarka."
+let f="Milan BHadarka hello hi."
 
 console.log(f.startsWith("Milan"))     //if string f is start with "Milan" then it give output true otherwise false.
 console.log(f.endsWith("."))          //if string f is end with "." then it give output true otherwise false.
- 
+console.log(f.includes("hello"));     //if in string there is "hello" at any index then it give true otherwise it"s give false
+
+
+let h= "Milan-Bhadarka-chandubhai."    
+h=h.split('-')      //it convert string to array in basis of '-'. we can give anything inside '' like split(' ') , split('_') e.t.c.
+console.log(h);
