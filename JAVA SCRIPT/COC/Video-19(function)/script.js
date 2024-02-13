@@ -17,3 +17,26 @@ function add(a,b)
 
 let c=add(3,6);
 console.log(c);
+
+
+
+
+function loginusermassage(username)                   
+{
+    return `${username} just logined`;
+    //console.log(${username} just logined);
+}
+
+let z=loginusermassage("Milan")
+console.log(z);
+
+
+
+function fun(username = "Hello")          //if user not give argument then this here "Hello" is the vbalue of username         
+{
+    return `${username} just logined`;
+    //console.log(${username} just logined);
+}
+
+let y=fun();
+console.log(y);
