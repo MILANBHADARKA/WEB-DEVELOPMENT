@@ -41,3 +41,12 @@ function fun(username = "Hello")          //if user not give argument then this 
 
 let y=fun();
 console.log(y);
+
+
+
+let a = function(number) {
+    return number +2;
+
+}
+
+console.log(a(2));
