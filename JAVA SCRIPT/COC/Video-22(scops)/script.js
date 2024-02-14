@@ -1,9 +1,9 @@
 //scope in nested function
 
 
-//we can also use  or call function before declration means here if we call then this is valid
-
+//we can also use or call function before declration means here if we call then this is valid
 // one();     //use before declaration is valid
+
 
 function one()
 {
@@ -28,20 +28,14 @@ one();
 
 
 
-
-
-
-
-
-
-
-
-
-
 //++++++++++++++++++++++++++Interesting+++++++++++++++++++++++++++++++++++++++++
 
 let add = function(num){              //in this case we can not use or call function before decleration
+                                          //this is also function but some time we can call it expression.
     return num + 2 ;
 }
 
-add(5);       
+// console.log(`${add(5)}`);
+let z=add(5);
+console.log(z);
+       

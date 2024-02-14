@@ -18,7 +18,7 @@ let z=5;
 let v="hello";
 let y=5.6;
 
-//difference between is var  is like local variable and let is like globle variable var is only use in block where it declere and we can use let everywhere in program. 
+//difference between is let is like local variable and var is like globle variable let is only use in block where it declere and we can use var everywhere in program. 
 
 console.log(z);
 console.log(v);

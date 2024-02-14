@@ -27,8 +27,9 @@ function loginusermassage(username)
     //console.log(${username} just logined);
 }
 
-let z=loginusermassage("Milan")
-console.log(z);
+// let z=loginusermassage("Milan")
+// console.log(z);
+console.log(`${loginusermassage("Milan")}`);
 
 
 
