@@ -7,7 +7,7 @@
 //here function will execute immediately.
 
 //remember that use of IIFE is not only to execute function immediately but to save function from global polution
-//this is two advantage og IIFE.
+//this is two advantage of IIFE.
 
 
 
