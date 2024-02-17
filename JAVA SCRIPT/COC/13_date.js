@@ -33,7 +33,7 @@ let mydate = new Date(2023,0,23)        //here remember that month start on '0' 
 console.log(mydate.toDateString())
 console.log("\n");
 
-// let mydate1 = new Date("2023-01-22")         //yyyy-dd-mm   here note that month start eith 01 means 01=january.
+// let mydate1 = new Date("2023-01-22")         //yyyy-dd-mm   here note that month start with 01 means 01=january.
 let mydate2 = new Date("01-22-2023")        //mm-dd-yyyy
 // let mydate3 = new Date("22-01-2023")      //dd-mm-yyyy this is not valid
 

@@ -30,6 +30,7 @@ console.log(y);
 
 //in java-script there are 7 premetive data-type
 //null,number,string,symbol,undefined,boolean,bigint
+
 let r=5;
 let s="sjdvb";
 let t=3.6546;

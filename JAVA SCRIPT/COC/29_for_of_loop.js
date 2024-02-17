@@ -64,7 +64,7 @@ let myobject = {
     id : 1
 }
 
-// for (const information of myobject) {         //this will not work because object is not iterable we need to use for in object
+// for (const information of myobject) {         //this will not work because object is not iterable we need to use loop for in object
 //     console.log(information);
 // }
 

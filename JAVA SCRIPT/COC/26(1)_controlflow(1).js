@@ -69,7 +69,7 @@ let newobject = {
     name : "Milan",
     id : 1
 }
-console.log(Object.keys(newobject));    //this is return object in form of array
+console.log(Object.keys(newobject));    //this is return keys of object in form of array
 console.log("\n");
 
 let myobject = {}

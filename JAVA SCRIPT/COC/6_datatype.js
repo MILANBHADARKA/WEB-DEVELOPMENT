@@ -11,6 +11,7 @@ let g=65436413;
 
 
 console.log(typeof(a));
+console.log("\n");
 
 a=Number(a);    //convert to number
 b=Number(b);
