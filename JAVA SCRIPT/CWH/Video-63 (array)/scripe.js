@@ -50,9 +50,9 @@ console.log(c);
 
 
 //shift() function
-let d=[2,3,6,4,7,8]       //this will remove first element and his space from array
+let d=[2,3,6,4,7,8]      
 
-d.shift();
+d.shift();           //this will remove first element and his space from array
 console.log(d);     
 console.log(`length is ${d.length}`)
 
