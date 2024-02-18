@@ -12,6 +12,7 @@ console.log("\n\n");
 
 
 
+
 //now do this work using for each loop
 
 let number = []    //make empty array
