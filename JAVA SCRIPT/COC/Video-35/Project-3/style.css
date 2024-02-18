@@ -1,0 +1,24 @@
+body{
+    background-color: #212121;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#clock{
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    min-width: 80px;
+    min-height: 35px;
+    border: 2px solid black;
+    border-radius: 9px;
+    color: black;
+    text-align: center;
+}
