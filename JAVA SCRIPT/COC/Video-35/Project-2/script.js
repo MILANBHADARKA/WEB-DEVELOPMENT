@@ -27,9 +27,5 @@ form.addEventListener('submit', function(e) {
       else if (bmi > 24.9){
         advice.innerHTML = `over weight`
       }
-      else{
-        advice.innerHTML = `hello`
-      } 
     }
-    
 });
