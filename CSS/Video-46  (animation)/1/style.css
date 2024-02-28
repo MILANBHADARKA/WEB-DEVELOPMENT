@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div.container{
+    height: 500px;
+    width: 1000px;
+    background-color: aqua;
+}
+
+div.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    overflow: auto;
+
+    animation-name: move2;
+    /* animation-name: move2; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: cubic-bezier(0.25, 0.58, 0.81, 0.44);
+    /* animation-delay: 3s; */
+    /* animation-play-state: paused; */
+
+
+    /* shorthand */
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+}
+
+
+
+@keyframes move2{
+    0%{
+        transform: translateY(400px);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(400px);
+        transform: translateY(400px);
+    }
+}
+
+

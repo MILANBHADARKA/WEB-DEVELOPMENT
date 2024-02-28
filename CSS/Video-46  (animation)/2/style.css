@@ -1,0 +1,50 @@
+html {
+    height: 100vh;
+  }
+  
+  div {
+    font-size: 1.6rem;
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 20px;
+    width: 480px;
+    opacity: 0;
+    display: none;
+  }
+  
+  /* Animation classes */
+  
+  div.fade-in {
+    display: block;
+    animation: fade-in 0.7s ease-in forwards;
+  }
+  
+  div.fade-out {
+    animation: fade-out 0.7s ease-out forwards;
+  }
+  
+  /* Animation keyframes */
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+  
+    100% {
+      opacity: 1;
+      display: block;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      display: block;
+    }
+  
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }

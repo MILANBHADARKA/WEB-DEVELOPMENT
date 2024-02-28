@@ -1,0 +1,59 @@
+.container{
+    height: 80vh;
+    width: 70vw;
+    position: relative;
+    background-color: aqua;
+}
+
+.box{
+    height: 121px ;
+    width: 121px;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 70px;
+    position: absolute;
+
+    animation-name: move1;
+    /* animation-name: move2;
+    animation-name: move3;
+    animation-name: move4; */
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes move1{
+    from{
+        right: 100%;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes move2{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes move3{
+    from{
+        bottom: 100%;
+    }
+    to{
+        bottom: 0;
+    }
+}
+@keyframes move4{
+    from{
+        top: 100%;
+    }
+    to{
+        top: 0;
+    }
+}
