@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-image: url(./assets/Images/bg.jpg);
+    height: 80vh;
+}
