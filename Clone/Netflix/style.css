@@ -100,3 +100,85 @@ nav button:nth-child(2){
     z-index: 20;
 }
 
+
+
+.first{
+    display: flex;
+    gap: 95px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-size: 20.5px;
+    font-weight: 500;
+}
+.first > .secimg{
+    position: relative;
+}
+
+.first > .secimg img{
+    position: relative;
+}
+.first > .secimg video{
+    position: absolute;
+    top: 95px;
+    right: 75px;
+    z-index: -1;
+}
+
+
+.second{
+    display: flex;
+    gap: 95px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-size: 20.5px;
+    font-weight: 500;
+}
+.second > .secimg{
+    position: relative;
+}
+
+.second > .secimg img{
+    position: relative;
+}
+.second > .secimg video{
+    position: absolute;
+    top: 95px;
+    right: 75px;
+    z-index: -1;
+}
+
+
+
+.third{
+    display: flex;
+    gap: 95px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-size: 20.5px;
+    font-weight: 500;
+}
+.third > .secimg{
+    position: relative;
+}
+
+.third > .secimg img{
+    position: relative;
+}
+.third > .secimg video{
+    position: absolute;
+    top: 95px;
+    right: 75px;
+    z-index: -1;
+}
+
+
+
+body{
+    background-color: black;
+}
