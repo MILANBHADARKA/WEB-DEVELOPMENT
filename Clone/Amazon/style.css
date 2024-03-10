@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #E3E6E6;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.nav1{
+    height: 8%;
+    min-width: 100%;
+    background-color: #131921;
+    color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+}
+.nav1  button{
+    margin: 2px;
+    padding: 3px;
+    width: 40px;
+}
+.nav1 #category{
+    height: 25px;
+    width: 41px;
+}
+.nav1 .logo:hover,.address:hover,.category:hover,.search:hover,.search_button:hover,.location:hover,.account:hover,.return:hover,.cart:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.nav1 .logo,.address,.category,.search_button,.location,.account,.return,.cart{
+    padding: 15px;
+}
+.nav1 [type="text"]{
+    height: 22px;
+    width: 294px;
+    color: black;
+}
+
+
+
+
+.nav2{
+    height: 5%;
+    min-width: 100%;
+    background-color: #232F3E;
+    color: white;
+
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin: auto;
+}
+.nav2 > button{
+    padding: 6px;
+    margin: 20px;
+    background-color: #232F3E;
+    color: white;
+    font-size: 14px;
+    border: .1px solid #232F3E;
+    border-radius: 4px;
+}
+
+.nav2 button:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+
+
+
+.poster{
+    background-image: url(./assets/IMG/1.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+.poster_text{
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 95vw;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left: 35px;
+    bottom: 147px;
+}
+.poster_text span,a{
+    padding: 20px;
+}
+.poster_text > a{
+    color: rgb(84, 80, 147);
+    text-decoration: none;
+}

@@ -16,7 +16,6 @@ promise1.then(function(){
 
 
 
-
 //without storing in variable
 new Promise(function( resolve , reject ) {
     setTimeout(function(){
@@ -27,7 +26,6 @@ new Promise(function( resolve , reject ) {
 }).then(function(){
     console.log("async 2 resolved");
 })
-
 
 
 
