@@ -39,7 +39,7 @@ function func() {
     try {
         console.log("The value of y is", y);
         return true;
-        
+    
     } catch (error) {
         console.log("Error hai bhai");
         return false;

@@ -22,8 +22,12 @@ document.querySelector('.add').addEventListener('click', function(event) {
     complete.innerHTML = '<i class="fas fa-check-circle"></li>';
     complete.classList.add('complete-btn');
     complete.classList.add('uncomplete');
+
     complete.style.background = 'rgb(255, 200, 0)';
+
+
     div.appendChild(complete);
+
     complete.addEventListener('click', function() { 
         if(complete.classList.contains('uncomplete')) {
             complete.classList.remove('uncomplete');
@@ -42,7 +46,10 @@ document.querySelector('.add').addEventListener('click', function(event) {
     let trash = document.createElement('button');
     trash.innerHTML = '<i class="fas fa-trash"></li>';
     trash.classList.add('trash-btn');
+    
     trash.style.background = 'rgb(255, 200, 0)';
+
+    
     div.appendChild(trash);
     trash.addEventListener('click', function() {
         div.remove();

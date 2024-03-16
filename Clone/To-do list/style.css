@@ -81,14 +81,10 @@ input{
     cursor: pointer;
 }
 
-.show{
-    font-size: 17px;
-    padding: 3px 25px;
-    border: 1px solid black;
-    border-radius: 5px;
+.complete-btn:hover{
+    cursor: pointer;
 }
-.show:hover{
-    background-color:blanchedalmond;
-    color: black;
+
+.trash-btn:hover{
     cursor: pointer;
 }
