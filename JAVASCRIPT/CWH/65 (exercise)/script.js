@@ -1,3 +1,5 @@
+//factorial
+
 let a=prompt("enter first number");
 
 
