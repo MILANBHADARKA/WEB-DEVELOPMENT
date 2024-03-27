@@ -88,3 +88,20 @@ input{
 .trash-btn:hover{
     cursor: pointer;
 }
+
+.clear-btn{
+
+    background-color: rgb(255, 200, 0);
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.clear-btn:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}

@@ -35,13 +35,6 @@ for(let i = 0; i < localStorage.length; i++) {
     span.innerText = localStorage.getItem(i);
     li.appendChild(span);
 
-    let complete = document.createElement('button');
-    complete.innerHTML = '<i class="fas fa-check-circle"></li>';
-    complete.classList.add('complete-btn');
-    complete.classList.add('uncomplete');
-    complete.style.background = 'rgb(255, 200, 0)';
-    li.appendChild(complete);
-
     
     let trash = document.createElement('button');
     trash.innerHTML = '<i class="fas fa-trash"></li>';
@@ -63,26 +56,9 @@ for(let i = 0; i < localStorage.length; i++) {
 }
 
 
-let complete = document.querySelectorAll('.complete-btn');
 let edit = document.querySelectorAll('.edit-btn');
 let trash = document.querySelectorAll('.trash-btn');
 
-complete.forEach( (btn) => {
-    btn.addEventListener('click', () => {
-
-        let li = btn.parentElement;
-
-        if(btn.classList.contains('uncomplete')) {
-            btn.classList.remove('uncomplete');
-            btn.classList.add('complete');
-            li.style.textDecoration = "line-through";
-        } else {
-            btn.classList.remove('complete');
-            btn.classList.add('uncomplete');
-            li.style.textDecoration = "None";
-        }
-    });
-});
 
 
 
@@ -140,3 +116,15 @@ trash.forEach( (btn) => {
         location.reload();
     });
 });
+
+
+
+
+let clear = document.querySelector('.clear-btn');
+
+clear.addEventListener('click', () => {
+    localStorage.clear();
+    location.reload();
+});
+
+
