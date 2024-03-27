@@ -16,7 +16,7 @@
     </header>
 
     <main>
-        <form action="">
+        <form>
 
             <div>  <!--this div is for name-->
                 <label for="name">NAME : </label>
@@ -32,7 +32,7 @@
 
             <div>   <!--this div is for contact info-->
                 <label for="number">PHONE NUMBER : </label>
-                <input type="number" id="number" placeholder="ENTER ACTIVE NUMBER" required><br><br>
+                <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="number" placeholder="ENTER ACTIVE NUMBER" required"><br><br>
                 <label for="email">EMAIL : </label>
                 <input type="email" id="email" placeholder="ENTER YOUR MAIL ADDRESS">
             </div><br><br>
@@ -101,6 +101,7 @@
 
             <div>   <!--this div is for submit-->
                 <input type="submit">
+                <input type="reset">
             </div><br><br>
 
         </form>
