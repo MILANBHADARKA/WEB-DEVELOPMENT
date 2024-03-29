@@ -12,13 +12,14 @@ nav{
    align-items: center;
    position:sticky;
    top: 0px;
+   font-family: 'Honk','Courier New', Courier, monospace;
 }
 
 nav > span {
     margin: 10px;
-    padding: 6px 100px;
+    padding: 6px 75px;
     border-radius: 9px;
-    font-size: 20px;
+    font-size: 38px;
     font-weight: bold;
     background-color: rgba(244, 227, 45, 0.5);
 }
@@ -42,10 +43,16 @@ nav > span {
     background-color: hsl(200, 87%, 81%);
 }
 .box > span {
-    font-size: 18px;
+    font-family: 'Workbench','Courier New', Courier, monospace;
+    font-size: 20px;
     font-weight: bold;
     margin: 50px 0px 20px 0px;
     text-decoration: underline;
+}
+
+.box p{
+    font-family: 'Oswald', sans;
+    font-size: 15px;
 }
 
 .text{
@@ -87,4 +94,25 @@ input{
 
 .trash-btn:hover{
     cursor: pointer;
+}
+
+.clear-btn{
+
+    background-color: rgb(255, 200, 0);
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.clear-btn:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+li{
+    font-family: 'Russo One', sans;
 }
