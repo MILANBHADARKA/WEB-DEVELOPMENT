@@ -1,0 +1,64 @@
+@media only screen and (max-width: 935px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        gap: 33px;
+        font-size: 18px;
+    }
+    .navbar .navlist{
+        flex-direction: column;
+        gap: 33px;
+    }
+    .nav-h-res{
+        height: 55px;
+    }
+    .nav-v-res{
+        opacity: 0;
+    }
+    .nav-h{
+        height: 350px;
+    }
+
+    .rightnav{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .burger .line{
+        margin: 3px;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        overflow: auto;
+    }
+    .box-main .left{
+        width: 95%;
+        text-align: center;
+    }
+    .right img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .sec{
+        flex-direction: column-reverse;
+    }
+    .paras{
+        width: 70%;
+        height: 80%;
+        padding: 0%;
+        text-align: center;
+    }
+}

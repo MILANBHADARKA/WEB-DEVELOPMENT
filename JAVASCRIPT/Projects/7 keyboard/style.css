@@ -5,4 +5,16 @@
 
 body{
     background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border: 2px solid white;
+    margin: 100px 0px 0px 0px;
+}
+td{
+    border: 2px solid white;
 }

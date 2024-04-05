@@ -5,24 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
   
-    <nav class="navbar background">
-        <ul class="navlist">
+    <nav class="navbar background nav-h-res">
+        <ul class="navlist  nav-v-res">
             <div class="logo"><img src="/assets/download.jpeg" alt="logo"></div>
             <li><a href="#home" class="a hover">Home</a></li>
             <li><a href="#about" class="a hover">About</a></li>
             <li><a href="#services" class="a hover">Services</a></li>
             <li><a href="#contact" class="a hover">Contact Us</a></li>
         </ul>
-        <div class="rightnav">
+        <div class="rightnav nav-v-res">
             <input type="text" name="search" id="search">
             <button class="btn btn-sm hover">Search</button>
         </div>
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </nav>
 
+    <div class="hr"></div>
+
+    <section class="background firstsection" id="home">
+        <div class="box-main">
+
+            <div class="left">
+                <p class="big">Lorem ipsum dolor sit amet, consectetur</p>
+
+                <p class="small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla hic, necessitatibus possimus quidem sed quibusdam. Facilis enim exercitationem qui adipisci quos ducimus animi in magni id quidem! Unde magni facere eum error eaque repudiandae autem aperiam molestias nisi ullam hic corporis.</p>
+
+                <button class="btn btn1">Hello</button>
+
+                <!-- <button class="btn btn2">Hi</button> -->
+            </div>
+    
+            <div class="right">
+                <img src="/assets/download.jpeg" alt="image">
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="hr"></div>
+
+    
+    <section class="sec pic-left" id="services">
+
+        <div class="paras">
+            <p class="big">Lorem ipsum, dolor sit amet consectetur</p>
+            <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sunt at vero error. Ipsam magni incidunt illo inventore ipsa aperiam quasi debitis distinctio quo ex mollitia suscipit</p>
+        </div>
+        <div class="picture">
+            <img src="https://source.unsplash.com/900x900/?coding,language" alt="img">
+        </div>
+
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="sec">
+
+        <div class="paras">
+            <p class="big">Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+            <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sunt at vero error. Ipsam magni incidunt illo inventore ipsa aperiam quasi debitis distinctio quo ex mollitia suscipit tempora .</p>
+        </div>
+        <div class="picture">
+            <img src="https://source.unsplash.com/900x900/?c,c++" alt="img">
+        </div>
+
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="sec pic-left">
+
+        <div class="paras">
+            <p class="big">Lorem ipsum, dolor sit amet consectetur</p>
+            <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sunt at vero error. Ipsam magni incidunt illo inventore ipsa aperiam quasi debitis distinctio quo ex mollitia suscipit tempora illum, labore at, vel commodi. Quae ipsum ducimus, vitae dolores a error velit quisquam, quibusdam illo cor</p>
+        </div>
+        <div class="picture">
+            <img src="https://source.unsplash.com/900x900/?CSS,JAVASCRIPT" alt="img">
+        </div>
+
+    </section>
+    
+    <div class="hr"></div>
+
+    <section class="contactus" id="contact">
+
+        <h1 class="heading">Contact Us</h1>
+
+        <form class="form">
+            <input type="text" name="name" id="name" class="input" placeholder="Enter your name">
+            <input type="email" name="email" id="email" class="input" placeholder="Enter your email">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <button class="submitbtn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2027 www.Responsive website - all rights reserved</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
