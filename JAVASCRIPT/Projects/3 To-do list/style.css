@@ -3,15 +3,19 @@
     margin: 0;
 }
 body{
+    padding: 101px;
+    margin: 100px 10px;
     background-color: rgb(210, 229, 255);
+    transform: scale(1.5);
+    overflow: scroll;
 }
 
 nav{
    display: flex;
    justify-content: center;
    align-items: center;
-   position:sticky;
-   top: 0px;
+   /* position:sticky; */
+   /* top: 0px; */
    font-family: 'Honk','Courier New', Courier, monospace;
 }
 
@@ -40,6 +44,7 @@ nav > span {
     gap: 15px;
     min-height: 250px;
     min-width: 300px;
+    border-radius: 10px;
     background-color: hsl(200, 87%, 81%);
 }
 .box > span {
@@ -115,4 +120,35 @@ input{
 
 li{
     font-family: 'Russo One', sans;
+}
+
+
+@media only screen and (max-width: 700px){
+
+    body{
+        padding: 20px;
+        transform: scale(1.1);
+    }
+
+    nav > span {
+        font-size: 33px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    
+        nav > span {
+            font-size: 31px;
+        }
+}
+
+@media only screen and (max-width: 350px){
+    body{
+        padding: 20px;
+        transform: scale(0.8);
+    }
+
+    nav > span {
+        font-size: 17px;
+    }
 }
