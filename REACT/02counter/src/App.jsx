@@ -3,6 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+/*THEORY: useState
+    useState is a hook that is used to create a state variable
+    useState is a hook that is used to create a state variable in a functional component
+    useState is a hook that is used to create a state variable in a functional component in react
+    useState is a hook that is used to create a state variable in a functional component in react that can be updated
+    useState is a hook that is used to create a state variable in a functional component in react that can be updated by calling a method
+    useState is a hook that is used to create a state variable in a functional component in react that can be updated by calling a method that is returned by useState
+    useState is a hook that is used to create a state variable in a functional component in react that can be updated by calling a method that is returned by useState with an initial value
+    useState is a hook that is used to create a state variable in a functional component in react that can be updated by calling a method that is returned by useState with an initial value of 15
+    
+*/
+
 function App() {
 
   let [counter,setCounter] = useState(15)
@@ -14,13 +26,13 @@ function App() {
   */
 
   const addvalue = () => {
-    counter++;
-    setCounter(counter)
+    // counter++;
+    setCounter(++counter)
   }
   const removevalue = () => {
 
-    counter--;
-    setCounter(counter)
+    // counter--;
+    setCounter(--counter)
   }
 
   return (

@@ -3,6 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+/* THEORY: useEffect
+    useEffect is a hook that is used to perform side effects in a functional component.
+    useEffect is called after the component is rendered.
+    useEffect is called after every render of the component
+    useEffect is called after the first render and after every update
+*/
+
 function App() {
   const [length, setLength] = useState(8)
   const [numbers, setNumbers] = useState(false)
@@ -37,7 +44,7 @@ function App() {
 
   }, [length, numbers, symbols])
 
-
+  
   useEffect( () => {
     passwordgenerator();
   }, [length, numbers, symbols, passwordgenerator])
