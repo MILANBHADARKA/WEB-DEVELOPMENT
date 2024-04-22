@@ -19,7 +19,7 @@ function Card({Username="Hello", BtnText="View Profile"}) {
             {BtnText} →
           </button>
         </div>
-      </div>
+     </div>
   )
 }
 
