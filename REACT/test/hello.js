@@ -1,8 +1,6 @@
 let box = document.querySelectorAll('.box');
 let delete1 = document.querySelector('.delete');
 
-// give backgroud color red to box
-
 box.forEach( (element) => {
     element.style.backgroundColor = 'red';
     element.style.color = 'white';
@@ -10,13 +8,26 @@ box.forEach( (element) => {
     element.style.padding = '10px';
     element.style.border = '1px solid black';
     element.style.borderRadius = '5px';
+})
+
+box.forEach( (element) => {
 
     element.addEventListener('click', () => {
-        element.style.backgroundColor = 'green';
+        if(element.classList.contains('delete')) {
+            element.style.backgroundColor = 'red';
+            element.classList.remove('delete');
+        }
+        else {
+            element.style.backgroundColor = 'blue';
+            element.classList.add('delete');
+        }
 
         delete1.addEventListener('click', () => {
-            element.style.display = 'none';
-        })
+            if(element.classList.contains('delete')) {
+                element.style.display = 'none';
+            }
+        })  
     })
+
 
 })
