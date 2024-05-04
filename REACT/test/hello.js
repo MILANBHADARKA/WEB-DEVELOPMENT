@@ -1,6 +1,7 @@
 let box = document.querySelectorAll('.box');
 let delete1 = document.querySelector('.delete');
 
+
 box.forEach( (element) => {
     element.style.backgroundColor = 'red';
     element.style.color = 'white';
@@ -31,3 +32,22 @@ box.forEach( (element) => {
 
 
 })
+
+
+let data = [
+    {
+        name: 'hello',
+        age: 20
+    },
+    {
+        name: 'world',
+        age: 21
+    }
+]
+
+localStorage.setItem('data', JSON.stringify(data));
+
+let data1 = JSON.parse(localStorage.getItem('data'));
+
+console.log(data1);
+
