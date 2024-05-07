@@ -23,10 +23,10 @@ function App() {
       alert('Please enter a todo')
       return
     }
-
-    setTodos([...todos, {id: uuidv4(), todo, isCompleted: false}])
+  
+    let newtodos = [...todos, {id: uuidv4(), todo, isCompleted: false}];
+    setTodos(newtodos)
     setTodo("") 
-    let newtodos = [...todos];
     localStorage.setItem('todos', JSON.stringify(newtodos))
   }
 
@@ -39,9 +39,10 @@ function App() {
     let index = todos.findIndex( (item) => {
       return item.id === id;
     })
-
+    
     let newtodos = [...todos];
-    newtodos[index].iscompleted = !newtodos[index].iscompleted
+    // console.log(newtodos[index].isCompleted)
+    newtodos[index].isCompleted = !newtodos[index].isCompleted
     setTodos(newtodos)
     localStorage.setItem('todos', JSON.stringify(newtodos))
    }
@@ -87,9 +88,9 @@ function App() {
 
                   <div key={item.id} className="todos flex my-3 justify-between w-1/2">
 
-                   <input name={item.id} onClick={handlecheck} type="checkbox" value={item.iscompleted} id="" />
+                   <input name={item.id} onClick={handlecheck} type="checkbox"  id="" defaultChecked={item.isCompleted} />
 
-                  <div className={item.iscompleted ? "line-through" : ""}>{item.todo}</div>
+                  <div className={item.isCompleted ? "line-through" : ""}>{item.todo}</div>
               
                   <div className="buttons flex gap-7">
                         <button onClick={ () => {handledelete(item.id)}} className=' border-2 border-black rounded-md px-3 bg-violet-400 hover:bg-violet-500 cursor-pointer'>Delete</button>
