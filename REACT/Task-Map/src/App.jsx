@@ -1,6 +1,4 @@
 import { useState, useEffect,useRef } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
 import Delete from './assets/Delete.svg'
 import Edit from './assets/Edit.svg'
@@ -37,7 +35,9 @@ function App() {
   }
 
   function handleinput(e) {
-    setTodo(e.target.value)
+    let value = e.target.value;
+    value = value.replace(/(\S{37})(?=\S)/g, "$1 ");
+    setTodo(value);
   }
 
   function handlecheck(e) {
@@ -68,7 +68,7 @@ function App() {
       let index = todos.findIndex( (item) => {
         return item.id === id;
       })
-      let newtodo = prompt('Edit Todo') || todos[index].todo
+      let newtodo = prompt('Edit Todo',todos[index].todo) || todos[index].todo
       let newtodos = [...todos]
       newtodos[index].todo = newtodo
       setTodos(newtodos)
@@ -83,20 +83,20 @@ function App() {
     <>
           <Navbar />
        
-          <div className="main max-w-[50vw] min-h-[80vh] bg-sky-400 m-auto my-8 p-9 rounded-md">
+          <div className="main w-[50vw] min-h-[80vh] bg-[#EAEAEA] text-[#34495E] m-auto my-8 p-2 rounded-xl ">
 
-          <h3 className='text-center m-5 text-xl font-extrabold underline underline-offset-2 '>Add Todo</h3>
+          <h3 className='text-center m-5 text-xl font-extrabold underline underline-offset-2 font-frederickathegreat'>Add Your Work</h3>
 
-            <div className='flex justify-center items-center'>
-            <input onChange={handleinput} value={todo} type="text" className='todoinput border-2 rounded-lg border-gray-600 w-1/2' ref={create} />
-            <img onClick={handleadd} src={Add} alt="" className=' h-8 w-8 cursor-pointer m-3' />
+            <div className='input flex justify-center items-center gap-1.5 mb-4 mt-9'>
+              <input onChange={handleinput} value={todo} type="text" className='todoinput border-2 rounded-lg border-gray-600 w-1/2 font-kodemono' ref={create} />
+              <img onClick={handleadd} src={Add} alt="" className=' h-8 w-8 cursor-pointer' />
             </div>
 
-            {todos.length != 0 && <button onClick={toggleFinished} className=' border-2 border-black rounded-md m-3 px-3 bg-violet-400 hover:bg-violet-500 cursor-pointer'>Show {showfinished ? 'Done' : 'Not Done'}</button>}
+            {todos.length != 0 && <button onClick={toggleFinished} className=' border-2 p-1 rounded-xl m-3 px-3 bg-[#3B5998] text-[#FFFFFF] hover:bg-[#517BBE] cursor-pointer font-patuaone'>View {showfinished ? ' Completed' : 'Incomplete'}</button>}
 
-            <h3 className='text-center m-5 font-bold underline underline-offset-2 '>Your Todos</h3>
+            <h3 className='text-center m-5 font-bold underline underline-offset-2 font-frederickathegreat tracking-wider'>Your Tasks</h3>
 
-            {todos.length === 0 && <div className='text-center m-4 font-bold underline text-lg'>No Todos</div>}
+            {todos.length === 0 && <div className='text-center m-4 font-bold underline text-lg font-russoone'>No Todos</div>}
             
 
             {todos.map( (item) => {
@@ -106,11 +106,11 @@ function App() {
                     
                     <div key={item.id} className="todos flex my-3 justify-between items-center w-5/6">
 
-                       <input name={item.id} onClick={handlecheck} type="checkbox"  id="" defaultChecked={item.isCompleted} className='cursor-pointer h-4 w-4'/>
+                      <input name={item.id} onClick={handlecheck} type="checkbox"  id="" defaultChecked={item.isCompleted} className='cursor-pointer h-4 w-4'/>
 
-                      <div className={`${item.isCompleted ? "line-through" : ""} w-[55%] whitespace-normal `} >{item.todo}</div>
-                    
-                      <div className="buttons flex gap-7">
+                      <div className={`todo ${item.isCompleted ? "line-through" : ""} w-[70%] whitespace-normal overflow-auto font-russoone `} >{item.todo}</div>
+                      
+                      <div className="buttons flex gap-2">
                             <img onClick={ () => {handleedit(item.id)}} src={Edit} alt="" className=' h-[22px] w-[22px] cursor-pointer' />
                             <img onClick={ () => {handledelete(item.id)}} src={Delete} alt="" className=' h-6 w-6 cursor-pointer' />
                       </div>
@@ -122,13 +122,13 @@ function App() {
                 else{
                     return( (true && item.isCompleted) && <div className="flex justify-center items-center">
                     
-                    <div key={item.id} className="todos flex my-3 justify-between items-center w-1/2">
+                    <div key={item.id} className="todos flex my-3 justify-between items-center w-5/6">
 
-                       <input name={item.id} onClick={handlecheck} type="checkbox"  id="" defaultChecked={item.isCompleted} className='cursor-pointer h-4 w-4'/>
+                      <input name={item.id} onClick={handlecheck} type="checkbox"  id="" defaultChecked={item.isCompleted} className='cursor-pointer h-4 w-4'/>
 
-                      <div className={`${item.isCompleted ? "line-through" : ""} w-1/2 max-w-1/2 whitespace-normal `} >{item.todo}</div>
-                    
-                      <div className="buttons flex gap-7">
+                      <div className={`todo ${item.isCompleted ? "line-through" : ""} w-[70%] whitespace-normal overflow-auto font-russoone `} >{item.todo}</div>
+                      
+                      <div className="buttons flex gap-2">
                             <img onClick={ () => {handleedit(item.id)}} src={Edit} alt="" className=' h-[22px] w-[22px] cursor-pointer' />
                             <img onClick={ () => {handledelete(item.id)}} src={Delete} alt="" className=' h-6 w-6 cursor-pointer' />
                       </div>
