@@ -49,8 +49,11 @@
 
             <div>   <!--this is division is for example of drop down menu-->
                 <label for="city">SELECT CITY : </label>
-                <select name="city names" id="city" required>
-                    <option value="kutiyana">Kutiyana</option>
+                <!-- here we use onchange because when we select any city it's redirect to that city page in dropdown menu we cannot give direct anchor tag link so we use this method -->
+                <select onchange="window.location.href=this.value" name="city names" id="city" required>
+                    <option value="Kutiyana">CITY</option>
+                    <option value="./1_list.html">Link</option>
+                    <option value="Kutiyana">Kutiyana</option>
                     <option value="junagadh">Junagadh</option>
                     <option value="rajkot">Rajkot</option>
                     <option value="ahmedabad">Ahmedabad</option>

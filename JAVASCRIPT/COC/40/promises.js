@@ -93,6 +93,7 @@ const promise5 = new Promise(function (resolve,reject) {
     },1000)
 })
 
+
 async function consumePromise5() {
     try{
         {
@@ -135,4 +136,4 @@ fetch('https://api.github.com/users/milanbhadarka').then((abc) => {
     return abc.json();
 }).then((data) => {
     console.log(data);
-}).catch((error) => console.log("errorrrrrr"))
+}).catch((error) => console.log("error to fetch api"))

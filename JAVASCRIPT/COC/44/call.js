@@ -10,6 +10,8 @@ function createuser(username,email,password)
 
     setusername.call(this,username)  //this will work
 
+    // this.username = username;   //we can also use this instead of `setusername.call(this,username)
+
     this.email = email;
     this.password = password;
 }
