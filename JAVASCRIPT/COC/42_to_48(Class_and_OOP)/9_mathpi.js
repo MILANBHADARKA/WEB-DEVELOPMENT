@@ -27,6 +27,7 @@ Object.defineProperty(Chai, "name", {
     writable: false,
     enumerable: false,
 })
+//so now we can't change the value of "name" property of "Chai" object because we have set the writable to false
 
 
 console.log(Object.getOwnPropertyDescriptor(Chai, 'name'));
