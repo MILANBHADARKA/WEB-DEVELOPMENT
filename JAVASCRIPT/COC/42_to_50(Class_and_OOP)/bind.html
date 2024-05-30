@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+
+    class React {
+        constructor(username){
+            this.liberary = "React";
+            this.server = "https://localhost:3000";
+            this.username = username;
+
+            //requirement
+            document
+                .querySelector('button')
+                .addEventListener('click', this.handleclick.bind(this));  //bind is used to bind the current object
+        }
+
+        handleclick(){
+            console.log("Button Clicked");
+            console.log(this);
+            console.log(this.liberary);     //if we not use "bind" then it will show undefined
+            console.log(this.username);
+        }
+    }
+
+    const app = new React("Milan")
+    const hello = new React("Vishal")
+
+</script>
+</html>
