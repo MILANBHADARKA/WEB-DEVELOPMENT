@@ -6,7 +6,7 @@ function a(){
 a();
 console.log("\n\n");
 
-
+ 
 //+++++++++++++++arrow function++++++++++++++
 
 let myfunc = () => {                //this is simple arrow function
