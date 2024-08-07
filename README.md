@@ -7,7 +7,7 @@ This repository contains a comprehensive collection of HTML, CSS, and JavaScript
 
 - **HTML:** Examples of semantic HTML elements, forms, tables, media elements, and more.
 - **CSS:** Styling techniques, layout examples, animations, and responsive design practices.
-- **JavaScript:** Code snippets for DOM manipulation, event handling, AJAX requests, and common algorithms.
+- **JavaScript:** Code snippets for DOM manipulation, event handling.
 
 **Features:**
 
@@ -54,10 +54,6 @@ Contributions are welcome! If you have code snippets or examples to share, pleas
     ```
 5. Open a pull request.
 
-## License
-
-This repository is licensed under the MIT License.
-
 ## Contact
 
-For any questions, suggestions, or feedback, please open an issue on GitHub or contact me at youremail@example.com.
+For any questions, suggestions, or feedback, please open an issue on GitHub or contact me at work.bhadarka@gmail.com
