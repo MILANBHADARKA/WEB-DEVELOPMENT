@@ -7,6 +7,6 @@ setInterval(function () {
 
     clock.innerHTML = `${date}`
 
-} , 1000)    //1000 ms = 1s
+} , 10)    //1000 ms = 1s
 
 
