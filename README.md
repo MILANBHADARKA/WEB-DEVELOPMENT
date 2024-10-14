@@ -21,11 +21,11 @@ To explore and use the code snippets in this repository, follow these steps:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/full-html-css-js-repo.git
+    git clone https://github.com/MILANBHADARKA/WEB-DEVELOPMENT.git
     ```
 2. **Navigate to the desired directory:**
     ```sh
-    cd full-html-css-js-repo
+    cd WEB-DEVELOPMENT
     ```
 3. **Open the relevant HTML file in your browser:**
 
