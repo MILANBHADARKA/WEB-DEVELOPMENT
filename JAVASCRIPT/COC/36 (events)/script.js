@@ -22,7 +22,7 @@ document.getElementById("google").addEventListener( 'click' , function (e) {
 document.querySelector('#images').addEventListener('click' , function(e) {
     // console.log(e.target.parentNode);     //this will give parent of e.target
 
-    // console.log(e.target.tagName);
+    // console.log(e.target.tagName);        //this will give tag name of e.target
 
     if(e.target.tagName === 'IMG')
     {
