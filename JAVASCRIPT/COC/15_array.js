@@ -18,5 +18,3 @@ console.log(Array.from("Bhadarka"));
 console.log("\n");
 let g = Array.from(d)
 console.log(g);
-
-
